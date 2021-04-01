@@ -7,7 +7,7 @@ task:
     name: new88
     timeout_in: 120m
     container:
-      image: ubuntu:latest
+      image: baalajimaestro/android_build:latest
       cpu: 16
       memory: 24G
 #    download_ccache_script:
