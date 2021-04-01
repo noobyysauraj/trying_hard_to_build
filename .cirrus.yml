@@ -10,11 +10,17 @@ task:
       image: baalajimaestro/android_build:latest
       cpu: 16
       memory: 24G
+system_update_script:
+      - ./system_update
+    neofetch_script:
+      - ./neofetch
+    specification_script:
+      - ./specification
 #    download_ccache_script:
 #      - ./download_ccache
     sync_script:
-      bash sync
+      - ./sync
     build_script:
-      bash build
+      - ./build
 #    upload_ccache_script:
 #      - ./upload_ccache
