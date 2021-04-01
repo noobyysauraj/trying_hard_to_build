@@ -1,7 +1,6 @@
 env:
     CIRRUS_CLONE_DEPTH: 1
     CIRRUS_WORKING_DIR: "/tmp/ci"
-    rclone_config: "ENCRYPTED[300de49bcaaa984d4399aef410d6ae5d19ca77b42af11431238f5d13dc953e89717e1dd90780890bb274aa505be9f8d6]"
 
 task:
     name: new88
