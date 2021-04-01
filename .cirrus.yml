@@ -1,6 +1,7 @@
 env:
     CIRRUS_CLONE_DEPTH: 1
     CIRRUS_WORKING_DIR: "/tmp/ci"
+    rclone_config: "ENCRYPTED[189b3e8d11fbce4730e6f1f419e7124f3f185f775ea99d83efa4ef5f464479902ab47bb005d2e6378dc6f580320d8674]"
 
 task:
     name: new88
@@ -9,6 +10,12 @@ task:
       image: ubuntu:latest
       cpu: 16
       memory: 24G
+    system_update_script:
+      - ./system_update
+    neofetch_script:
+      - ./neofetch
+    specification_script:
+      - ./specification
 #    download_ccache_script:
 #      - ./download_ccache
     sync_script:
@@ -17,4 +24,3 @@ task:
       - ./build
 #    upload_ccache_script:
 #      - ./upload_ccache
-      
