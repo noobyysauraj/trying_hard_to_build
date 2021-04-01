@@ -9,8 +9,6 @@ task:
       image: ubuntu:latest
       cpu: 16
       memory: 24G
-    system_update_script:
-      - ./system_update
     neofetch_script:
       - ./neofetch
     specification_script:
