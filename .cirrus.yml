@@ -7,7 +7,7 @@ task:
     name: new88
     timeout_in: 120m
     container:
-      image: ubuntu:latest
+      image: hirsute:latest
       cpu: 16
       memory: 24G
     system_update_script:
