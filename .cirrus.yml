@@ -7,14 +7,14 @@ task:
     name: new88
     timeout_in: 120m
     container:
-      image: bash:latest
+      image: ubuntu:latest
       cpu: 16
       memory: 24G
 #    download_ccache_script:
 #      - ./download_ccache
     sync_script:
-      - ./sync
+      bash sync
     build_script:
-      - ./build
+      bash build
 #    upload_ccache_script:
 #      - ./upload_ccache
